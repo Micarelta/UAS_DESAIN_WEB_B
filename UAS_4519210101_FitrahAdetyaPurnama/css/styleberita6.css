@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+/* Mengimpor font yang diinginkan*/
+
+*{
+  margin: 0;
+  padding: 0; /* CSS RESET */
+  box-sizing: border-box;
+}
+
+#header .navigation .navbar .navbar-brand .logo{
+  height: 45px; 
+  width: auto;  /* Mengatur Besar Logo Website */
+}
+
+#header .navigation{
+  background-color: #E8E8E8; /* Mengatur Warna Header */
+}
+
+.navbar .navbar-toggler{
+  border-color: white;   /* Mengatur border atau pinggiran button toggler (hamburger) */
+}
+
+.navbar .fas{
+  font-size: 30px;   /* Mengatur ukuran tombol toggler (hamburger) */
+}
+
+#header .navigation .navbar .navbar-nav .nav-item .nav-link{
+  color: white;
+  font-size: 1.5em;   /* Mengatur font, warna, ukuran, jarak, dan tata letak teks */
+  padding-left: 20px; /* serta tampilan pada header */
+  text-align: center;
+  display:block;
+  font-family: sans-serif;
+}
+
+#header .navigation .navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #000;       /* Mengatur Warna ketika kursor mengarahkan ke navigasi item di header */
+  transition: 0.4s;  /* dan waktu transisi */
+}
+
+#header .navigation .navbar .navbar-nav .active .nav-link {
+  color:#000000;   /* Mengatur warna saat navbar aktif */
+}
+
+#bg{
+  background-image: url(../images/dangkalan.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 885px;   /* Mengatur gambar background, ukuran, jarak, dan tampilan */
+  color: white;    /* serta warna teks di jumbotron */
+  margin-top: -331px;
+  margin-bottom: -12px;
+  display: block;
+}
+
+#bg .jumbotron.jumbotron-fluid{
+  padding-top: 450px;
+  background: none;    /* Mengatur jarak tulisan dan menghapus background default jumbotron */
+}
+
+#news6{
+  padding-bottom: 30px;
+  text-align: center;     /* Mengatur jarak dan tata letak tulisan konten */
+}
+
+#news6 .container.berita{
+  margin-top: -40px;
+  margin-bottom: 12px;    /* Mengatur jarak dan warna background konten */
+  background-color: white;
+}
+
+#news6 .container.berita h1{
+  margin: 36px;
+  font-family: Cinzel;   /* Mengatur jarak judul konten dan mengatur font tulisan */
+}
+
+#news6 .container.berita p{
+  font-size: 20px;
+  padding: 36px;        /* Mengatur ukuran teks serta jarak antar tulisan */
+}
+
+#news6 .container.berita img{
+  width: 90%;        /* Mengatur lebar foto */
+}
+
+#webbawah{
+  background-color: #001F2B;
+  padding-top: 10px;
+  height: 40px;     /* Mengatur warna, tinggi, jarak konten, dan font tulisan */
+  margin-top: -2px; /* serta jarak tulisan pada footer */
+  font-family: Castoro;
+}
+
+body{
+  background-color: #E8E8E8; /* Mengatur warna body */
+}
+
+@media only screen and (max-width: 333px){
+  #bg .jumbotron.jumbotron-fluid{
+  padding-top: 410px;         /* Meresponsifkan web dengan media query yang terdapat */
+  }                           /* fungsi pengubahan jarak tulisan pada jumbotron dari sebelumnya */
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+/* Mengimpor font yang diinginkan*/
+
+*{
+  margin: 0;
+  padding: 0; /* CSS RESET */
+  box-sizing: border-box;
+}
+
+#header .navigation .navbar .navbar-brand .logo{
+  height: 45px; 
+  width: auto;  /* Mengatur Besar Logo Website */
+}
+
+#header .navigation{
+  background-color: #E8E8E8; /* Mengatur Warna Header */
+}
+
+.navbar .navbar-toggler{
+  border-color: white;   /* Mengatur border atau pinggiran button toggler (hamburger) */
+}
+
+.navbar .fas{
+  font-size: 30px;   /* Mengatur ukuran tombol toggler (hamburger) */
+}
+
+#header .navigation .navbar .navbar-nav .nav-item .nav-link{
+  color: white;
+  font-size: 1.5em;   /* Mengatur font, warna, ukuran, jarak, dan tata letak teks */
+  padding-left: 20px; /* serta tampilan pada header */
+  text-align: center;
+  display:block;
+  font-family: sans-serif;
+}
+
+#header .navigation .navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #000;       /* Mengatur Warna ketika kursor mengarahkan ke navigasi item di header */
+  transition: 0.4s;  /* dan waktu transisi */
+}
+
+#header .navigation .navbar .navbar-nav .active .nav-link {
+  color:#000000;   /* Mengatur warna saat navbar aktif */
+}
+
+#bg{
+  background-image: url(../images/pantai2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 897px;   /* Mengatur gambar background, ukuran, jarak, dan tampilan */
+  color: white;    /* serta warna teks di jumbotron */
+  margin-top: -331px;
+  margin-bottom: -12px;
+  display: block;
+}
+
+.container.loginweb{
+  background-size: cover; /* Mengatur ukuran kolom dan jarak konten */
+  padding-top: 400px;
+  margin-bottom: 200px;
+}
+
+.row form{
+  background: white;   /* Mengatur warna background, jarak konten, border, warna tulisan */
+  padding: 30px;       /* dan penambahan bayangan pada formulir */
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px 0px #000000;
+  color: black;
+}
+
+#webbawah{
+  background-color: #001F2B;
+  padding-top: 10px;
+  height: 40px;     /* Mengatur warna, tinggi, jarak konten, dan font tulisan */
+  margin-top: -2px; /* serta jarak tulisan pada footer */
+  font-family: Castoro;
+}

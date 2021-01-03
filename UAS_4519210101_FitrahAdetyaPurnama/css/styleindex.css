@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+/* Mengimpor font yang diinginkan*/
+
+*{
+  margin: 0;
+  padding: 0; /* CSS RESET */
+  box-sizing: border-box;
+}
+
+#header .navigation .navbar .navbar-brand .logo{
+  height: 45px; 
+  width: auto;  /* Mengatur Besar Logo Website */
+}
+
+#header .navigation{
+  background-color: #E8E8E8; /* Mengatur Warna Header */
+}
+
+.navbar .navbar-toggler{
+  border-color: white;   /* Mengatur border atau pinggiran button toggler (hamburger) */
+}
+
+.navbar .fas{
+  font-size: 30px;   /* Mengatur ukuran tombol toggler (hamburger) */
+}
+
+#header .navigation .navbar .navbar-nav .nav-item .nav-link{
+  color: white;
+  font-size: 1.5em;   /* Mengatur font, warna, ukuran, jarak, dan tata letak teks */
+  padding-left: 20px; /* serta tampilan pada header */
+  text-align: center;
+  display:block;
+  font-family: sans-serif;
+}
+
+#header .navigation .navbar .navbar-nav .nav-item .nav-link:hover{
+  color: #000;       /* Mengatur Warna ketika kursor mengarahkan ke navigasi item di header */
+  transition: 0.4s;  /* dan waktu transisi */
+}
+
+#header .navigation .navbar .navbar-nav .active .nav-link {
+  color:#000000;   /* Mengatur warna saat navbar aktif */
+}
+
+#bg{
+  background-image: url(../images/foto2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 897px;   /* Mengatur gambar background, ukuran, jarak, dan tampilan */
+  color: white;    /* serta warna teks di jumbotron */
+  margin-top: -331px;
+  margin-bottom: -12px;
+  display: block;
+}
+
+#bg .jumbotron.jumbotron-fluid{
+  padding-top: 415px;
+  background: none;    /* Mengatur jarak tulisan dan menghapus background default jumbotron */
+}
+
+#home{
+  text-align: center;
+  background-color: #E8E8E8; /* Mengatur tata letak tulisan (judul), warna background konten dan */
+  padding-bottom: 72px;      /* jarak antar konten */
+}
+
+#home .container.konten h1{
+  margin:36px;              /* Mengatur jarak judul konten */
+}
+
+#home .container.konten h1,h3{
+  font-family: Cinzel;      /* Mengatur font tulisan */
+}
+
+#home .container.konten .row{
+  margin:11px;              /* Mengatur jarak tulisan di kolom dengan konten */
+}
+
+#home .container.konten{
+  background-color:white;
+  margin-top:-60px;      /* Mengatur warna background, jarak, tampilan, ukuran teks hingga font teks */
+  padding-bottom:37px;
+  display: inline-block;
+  font-family: Castoro;
+  font-size: 20px;
+}
+
+.fas{
+  font-size: 55px; /* Mengatur ukuran logo */
+}
+
+.fab{
+  font-size: 55px /* Mengatur ukuran logo */
+}
+
+#about{
+  background-color: #012D3F; /* Mengatur warna background dan jarak konten pada footer */
+  padding-top: 16px;
+}
+
+#about .container{
+  padding: 22px;  /* Mengatur jarak konten pada footer */
+}
+
+#about .container.footer .col-lg-6.col-md-6.col-sm-12.col-xs-12{
+  font-family: cursive; /* Mengatur font teks dan jarak konten pada kolom about */
+  color:#eee;           /* disini fungsi warna berfungsi dikarenakan terdapat paragraf */
+  padding-bottom: 10px; /* dengan penambahan fungsi bootstrap di kelas yaitu text-white */
+}
+
+#webbawah{
+  background-color: #001F2B;
+  padding-top: 10px;
+  height: 40px;     /* Mengatur warna, tinggi, jarak konten, dan font tulisan */
+  margin-top: -2px; /* serta jarak tulisan pada footer */
+  font-family: Castoro;
+}
+
+.logososmed i{
+  margin-left: 15px;  /* Mengatur jarak logo dan mengatur warna logo */
+  margin-top: -10px;
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth; /* Mengatur agar smooth scrolling */
+}
+
+@media only screen and (max-width: 333px){
+  #bg .jumbotron.jumbotron-fluid{
+  padding-top: 385px;         /* Meresponsifkan web dengan media query yang terdapat */
+  }                           /* fungsi pengubahan jarak tulisan pada jumbotron dan */
+                              /* fungsi pengubahan jarak logo pada about dari sebelumnya */
+  .logososmed i{
+  margin-left: 15px;
+  margin-bottom: 20px;
+  }
+}
